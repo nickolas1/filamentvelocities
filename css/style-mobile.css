@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+
+    body{
+            font-size: 14pt;
+        }
+        
+        .sinkline {
+            stroke-width: 1.px;
+        }
+        .coordclue {
+            font-size:7pt;    
+        }
+
+        .axis text {
+            font-size: 7pt;
+        }
+        .axislabel {
+            font-size: 8pt;
+        }
+        .slider .handle {
+          stroke-width: 1.px;
+        }
+
+		
+
+	
+            		

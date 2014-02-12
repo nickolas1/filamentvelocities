@@ -1,0 +1,273 @@
+@charset 'UTF-8';
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+
+    body
+    {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1em;
+        background: #fdfdfd;
+    }
+    
+    h1
+    {
+        font-size: 1.65em;
+        color: #444444;
+    }
+    
+    p
+    {   
+        font-size: 0.8em;
+        color: #1b1b1b;
+        line-height: 1.5em;
+    }
+    
+    em
+    {
+        font-weight: 600;
+    }
+     
+    
+    sup 
+    {
+        font-size:0.7em; 
+        vertical-align:super;
+    }
+    
+    sub 
+    {
+        font-size:0.7em; 
+        vertical-align:sub;
+    }
+    
+    small
+    {
+        font-size: 0.8em;
+    }
+    
+    .imageselector 
+    {
+        padding: 0 1em 0 .5em;
+        font-size: 0.8em;
+        color: #cecece; 
+        font-weight:600;
+        line-height: 1.5em;
+    }
+    
+    h2
+    {
+        font-size:0.7em;
+        color: #1b1b1b;
+        font-weight:400;
+        font-style:italic;
+    }
+    
+    .imageselector p, span
+    {
+        onmouseover: "";
+        cursor: pointer;
+        padding-left:1em;
+    }
+    
+    .imageselector.selected
+    {
+        color: #214353;
+        font-weight:600;
+    }
+    
+    emblue
+    {
+        color: #214353;
+        font-weight:600;
+    }
+        
+    .pointselector 
+    {
+        padding: 0 1em 0 .5em;
+        font-size: 0.8em;
+        color: #1b1b1b; 
+        line-height: 1.5em;
+    }
+
+    .header
+    {
+        margin: 0 0 1em 0;
+    }
+    
+    .footer
+    {
+        font-weight: 300;
+        font-size: 0.55em;
+        text-align: right;
+        padding-bottom:1em;
+    }
+    
+    a
+    {
+		text-decoration: none;
+		color: inherit;
+		border-bottom: dotted 1px rgba(128,128,128,0.5);
+		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		outline: 0;
+    }
+    a:hover
+		{
+			color: #E27689;
+			border-bottom-color: rgba(255,255,255,0);
+		}
+    
+    .description
+    {
+        padding: 0.5em 1em 1em 0.5em;
+        font-size: 0.7em;
+        line-height: 1.2em;
+    }
+    
+    .columntable
+    {
+        width:25%;
+        height:1.9em;
+        line-height:1.25em;
+        float:left;
+        vertical-align: middle;
+        onmouseover: "";
+        cursor: default;
+    }
+    
+    .columntable.rowlabel
+    {
+        text-align: right;
+        font-size: 0.75em;
+        color: #6a6a6a;
+    }
+    
+    .columntable.collabel
+    {
+        text-align: center;
+        font-size: 0.75em;
+        color: #6a6a6a;
+    }
+    
+    .columntable.entry
+    {
+        text-align: center;
+        font-size:0.95em;
+        font-weight: 600;
+        color: #5c5c5c;
+    }
+    
+    path.spectraline {
+        fill: none;
+        stroke-width: 1.5px;
+    }
+    
+    path.spectraline.C18O {
+        stroke: #666680;
+    }
+    
+    path.spectraline.N2Hplus {
+        stroke: #e65c8a;
+    }
+    
+
+    .horizontalGrid {
+        fill: none;
+        shape-rendering: crispEdges;
+        stroke: #214353;
+        stroke-width: 1px;
+        opacity: 0.3;
+    }   
+    
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #666666;
+        shape-rendering: crispEdges;
+        opacity: 0.75;
+    }
+    .axis text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 11pt;
+        fill: #666666;
+        opacity: 0.75;
+    }
+    .x.axis path {
+        display: none;
+    }
+    .y.axis path {
+        display: none;
+    }
+    
+    .axislabel {
+        font-family: "Open Sans", sans-serif;
+        font-size: 10pt;
+    }
+    
+    .axislabel.C18O {
+        fill: #666680;
+    }
+    
+    .axislabel.N2Hplus {
+        fill: #e65c8a;
+    }
+    
+    #topmatter {
+        background: #f7f7f7;
+        box-shadow: inset 0 -1px 1px 0 rgba(0,0,0,0.05);
+    }
+    
+    #blurb {
+        background: #fdfdfd;
+        box-shadow: inset 0 -1px 1px 0 rgba(0,0,0,0.05);
+    } 
+    
+    #columnpicker {
+        background: #fbfbfb;
+        box-shadow: inset 0 -1px 1px 0 rgba(0,0,0,0.05);
+    } 
+    
+    #toggler {
+        background: #f9f9f9;
+        box-shadow: inset 0 -1px 1px 0 rgba(0,0,0,0.05);
+    }
+
+    .coordclue {
+        font-family: "Open Sans", sans-serif;
+        font-size:8pt;
+        text-anchor: middle;
+        opacity: 0.5;
+        fill: hsl(188, 100%, 24%);        
+    }
+
+        
+    .slider .handle {
+      /*fill: #fff;
+      stroke: #000;*/
+      fill: #0bcbab;
+      stroke: #0bcbab;
+      stroke-opacity: .7;
+      fill-opacity: .5;
+      stroke-width: 2px;
+      pointer-events: none;
+      shape-rendering: crispEdges;
+    }
+    .slider .handlepulse{
+        fill: #0b98cb;
+        fill-opacity: 0.2;
+        stroke: #0bcbab;
+        stroke-opacity: 0.5;
+    }
+    .slider .extent{
+        fill-opacity: 0;
+    }
+		
+
+	
+            		
