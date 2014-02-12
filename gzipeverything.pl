@@ -15,8 +15,6 @@ sub wanted
 {
     if (/(.*\.(?:html|css|js|json|csv)$)/i) {
         print "Compressing $File::Find::name\n";
-        if (! -f "$_.gz") {
-            system ("gzip --keep --best --force $_");
-        }
+        system ("gzip --keep --best --force $_");
     }
 }
