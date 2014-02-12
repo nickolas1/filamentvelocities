@@ -2,6 +2,7 @@ filamentvelocities
 ==================
 
 website to interact with some simulation data
+http://nickolas1.com/filamentvelocities/
 
 uses skelJS to handle the basic layout
 
