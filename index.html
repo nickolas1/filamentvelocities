@@ -2,22 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <title>line of sight filament velocities</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/d3.v3.min.js"></script>
-        <script type="text/javascript" src="js/skel.min.js">
-        {
-            prefix: "css/style",
-            resetCSS: true,
-            boxModel: "border",
-            grid: { gutters: 0 },
-            breakpoints: {
-                'normal': { range: "1317-", containers: 1317 }, //makes 768 image
-                'narrow': { range: "641-1316", containers: 879 }, //makes 512 image
-                'mobile': { range: "-640", containers: 'fluid', lockViewport: true, grid: { collapse: true } }
-            }
-        }
-        </script>
+        <script type="text/javascript" src="js/skel.min.js"></script>
+        <script src="js/skelconfig.js"></script>
         <script>
               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,7 +17,6 @@
               ga('create', 'UA-38044695-1', 'nickolas1.com');
               ga('send', 'pageview');
         </script>
-       
     </head>
     
     <body>
@@ -56,16 +45,16 @@
                         
                             </div> 
                             <div id="columnpicker" class="imageselector not-mobile">
-                                <h2>pick a column density image (current choice is <emblue>darker</emblue>)</h2>
+                                <h2>pick a column density image (current choice is <em class="emblue">darker</em>)</h2>
                                 <p id="totalColumn" onclick="selectTotalColumn()">
                                 total column density <small>(log scale)</small></p>
                                 <p id="moderateColumn" onclick="selectModerateColumn()">
-                                10<sup>3</sup> < n cm<sup>-3</sup> < 10<sup>4.5</sup> <small>(linear scale; approximates C<sup>18</sup>O)</small></p>
+                                10<sup>3</sup> &lt; n cm<sup>-3</sup> &lt; 10<sup>4.5</sup> <small>(linear scale; approximates C<sup>18</sup>O)</small></p>
                             </div>
                             <div id="toggler" class="imageselector not-mobile">
                                 <h2>toggle high density contours and sink particles</h2>
                                 <span style="margin-left:1em;" id="highColumn" onclick="toggleHighDensity()">                               
-                                    10<sup>4.5</sup> < n cm<sup>-3</sup> <small>(approximates N<sub>2</sub>H<sup>+</sup>)</small>
+                                    10<sup>4.5</sup> &lt; n cm<sup>-3</sup> <small>(approximates N<sub>2</sub>H<sup>+</sup>)</small>
                                 </span>
                                 <span style="margin-left:3em;" id="sinkParticles" onclick="toggleSinkParticles()">           
                                     sink particles
@@ -99,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-            <div>
+            </div>
         </div>
     
         <script type="text/javascript" src="js/viz.min.js"></script>
